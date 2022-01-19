@@ -1,0 +1,46 @@
+body{
+    background: rgba(0, 0, 0, 0.185);
+    font: normal 15pt Arial;
+    
+}
+header{
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+
+}
+section{
+    background: rgba(255, 255, 255, 0.781);
+    border-radius: 8px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+
+}
+div#res{
+    background-color: rgba(0, 0, 255, 0.082);
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align:center;
+    margin: auto;
+    width: 300px;
+    
+}
+div#dados{
+    
+    margin: auto;
+    text-align:center;
+    
+    
+    
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do ex010</title>
+    <style>
+        body{
+            background-color: rgba(10, 10, 90, 0.301) ;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            text-align-last: center;
+            
+        }
+        h1{
+            background-color: rgba(0, 0, 255, 0.089);
+            color: black;
+            
+        }
+        p{
+            text-justify:distribute;
+            font-size: 20px;
+           
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Fazendo o desafio do ex010</h1>
+    <h2>Sobre:</h2>
+    <p>Eu tenho que fazer a mesma coisa que foi feita no ex010, entretanto, eu tenho que usar Nacionalidade como tema que será Brasil e Estrangeiro.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni veritatis ea, repellat suscipit dolor ab fugiat explicabo eius? Earum voluptatem corrupti at quae aliquid tempore officia, dolore reiciendis ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rem libero commodi incidunt officia accusantium. Voluptates debitis assumenda et, aut facere tempora, hic labore adipisci voluptate facilis harum dicta animi?</p>
+    
+
+    Seu País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="averiguar()">
+
+    <div id = 'res'>
+
+    </div>
+
+
+    <script>
+        function averiguar(){
+            var txtp = (window.document.getElementById('txtpais')).value
+            var res = window.document.getElementById('res')
+            //var final = (txtp.value) // Estava dando o erro  [object HTMLInputElement]! pq eu n havia colocado o .value para "reconhecer" o texto digitado no txtp (txtp esta dentro de txtpais q é a caixa pra digitar o país do usuário)
+            res.innerHTML += `<p>Seu país é ${txtp}!</p>`
+
+            if (txtp == 'Brasil') {
+                res.innerHTML += `<p>VOCÊ É BRASILEIRO(A)!</p>`
+            }
+            res.innerHTML += '<p>Tenha um bom dia!</p>'
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+
+    </header>
+
+    <section>
+        <div id='dados'> <!--CAIXA ONDE SERÁ DIGITADO O VALOR-->
+            Número (entre 1 e 100):
+            <input type="number" name="fnumero" id="fnumero">
+            <input type="button" value="Adiconar" onclick="Adicionar()">
+        </div>
+
+        <div id='dadosValor'> <!--TABELA ONDE APARECERÁ OS VALORES--> 
+            <br><select id="quadro" size="10px"></select>
+            <br><input type="button" value="Finalizar" onclick="Finalizar()">
+        </div>
+
+        <div id='res'>
+            O resultado irá aparecer aqui!
+        </div>
+
+        
+        
+    </section>
+
+    <footer>
+        <p>&copy;joão Pedro</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
