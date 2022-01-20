@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= 'UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+
+    <style>
+        div{
+            display: inline-block;
+            padding:15px;
+            font-size:1.5rem;
+            background-color:rgba(0, 0, 255, 0.603);
+            color:whitesmoke;
+            border-radius: 8px;
+
+        }
+    </style>
+
+
+    <script>
+        function changeH1(i){
+
+            //let input = document.getElementById("texto");
+             
+            let h1 = document.getElementsByTagName("h1")[0];
+
+            h1.innerText = i.value;
+
+        }
+
+
+
+        function hideH1(){
+            let h1 = document.getElementsByTagName("h1")[0];
+
+            h1.style.display = "none"
+        }   
+    </script>
+   <!--<script>
+        function h1click(){
+            console.log("Executando a função")
+        }
+    </script>-->
+</head>
+<body>
+    
+
+    <h1>Clique em mim</h1> 
+
+    <input type="text" oninput="changeH1(this)">
+
+
+    <div onclick="hideH1()">
+        Clique
+    </div>
+
+    <!--<h1 onclick="this.style.color='red'">Clique em mim</h1>-->
+
+
+    <!--<h1 onclick="mudarcor()" id="h1">Clique em mim!</h1>
+    <script src="script.js"></script>-->
+</body>
+</html>
