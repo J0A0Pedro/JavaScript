@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //localStorage só pode armazenar strings. Use JSON para converter 
+
+        /*let a = {
+            nome:"Igor", 
+            n1: 7.3
+        }*/
+
+        /*localStorage.setItem("aluno", JSON.stringify(a));*/
+
+
+        let a = localStorage.getItem("aluno");
+        console.log(JSON.parse(a));
+
+        function clear(){
+            localStorage.clear();
+        }
+        
+
+
+
+
+        /*
+        localStorage.setItem("numero", 5.7);
+
+
+        let n = localStorage.getItem("numero");
+
+        console.log(n);
+
+        let n2 = 5.7;
+        console.log(n2);
+        */
+
+    </script>
+</head>
+<body>
+    
+
+    <h1 id="nome"></h1>
+
+    <input type="text" oninput="atualizar(this)">
+
+    <button onclick="clear()">Clear</button>
+</body>
+</html>
