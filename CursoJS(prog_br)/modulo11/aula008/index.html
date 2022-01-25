@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        p{
+            cursor:pointer;
+            display: inline-block;
+            margin: 10px;
+            padding:10px;
+            background-color: black;
+            color:white;
+            border-radius: 8px;
+        }
+        audio{
+           margin-bottom:30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <audio id="music" controls >
+
+        <source  src="./audio/AREA21-Followers-_Official-Video_.ogg"  type="audio/ogg">
+
+        <source src="./audio/SIAMES-¨NO-LULLABY¨-_Official-Animated-Video_-_128-kbps_.mp3"  type="audio/mpeg">
+    </audio>
+
+    <div class="controle">
+        <p onclick="play()">Play</p>
+        <p onclick="stop()">Stop</p>
+        <p onclick="retroceder()" >Retroceder</p>
+        <p onclick="avancar()"  >Avançar</p>
+        <p onclick="diminuir()" >Diminuir Vel</p>
+        <p onclick="acelerar()">Aumentar Vel</p>
+        <p onclick="reiniciar()" >Reiniciar</p>
+
+
+    </div>
+
+    <script>
+        let song = document.getElementById("music");
+
+        function play(){
+            song.play();
+        }
+        function stop(){
+            song.pause();
+        }
+        function avancar(){
+            song.currentTime += 15;
+        }
+        function retroceder(){
+            song.currentTime -= 15;
+        }
+        function acelerar(){
+            song.playbackRate += 0.5;
+        }
+        function diminuir(){
+            song.playbackRate -= 0.5;
+        }
+        function reiniciar(){
+            song.pause();
+            song.currentTime =0;
+            song.play();
+        }
+        
+
+    </script>
+</body>
+</html>
