@@ -1,0 +1,47 @@
+p::first-line{
+    color:red; 
+}
+h1, p::first-letter{
+    color:blue;
+    font-size: 4rem;
+}
+
+
+li{
+    list-style: none;
+    /*list-style-image: url(./03_1.png);*/
+    
+    /*margin-left: 200px;*/
+
+
+}
+
+
+li::before{
+    content: "";
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-image: url(./03_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+li::after{
+    content: "";
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-image: url(./03_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p::selection{
+
+    /*background-color:#17a2b8 ;*/
+    background-color: #007bff; 
+    color:white;
+}

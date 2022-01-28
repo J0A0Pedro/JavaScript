@@ -1,0 +1,65 @@
+/*  
+. para Class
+# para id
+tag em geral: div/p/h1 etc
+* seleciona todos os elementos
+, para adicionar outra tag
+*/
+
+/*
+#head p{
+    background-color: green;
+}
+Coloca fundo somente nos paragrafos que estão dentro do id head
+*/
+
+/*
+#head > p{
+    background-color: green;
+}
+Coloca fundo somente em paragrafos cujo pai é o head
+*/
+
+/*
+#head + p{
+    background-color: green;
+}
+Pega o p que vem depois da tag do head
+*/
+/*
+#head ~ p{
+    background-color: green;
+}
+Pega todos os paragrafos depois do head
+*/
+
+/*
+[width="500"]{
+    background-color: green;
+}
+Todo elemento que tiver um atributo width igual a 500 vai ser selecionado. Se n quiser passar o width, ele seleciona aqueles que tem o width sem se importar com o tamanho
+*/
+
+[title~="titulo"]{
+    background-color: green;
+}
+/* ~= seleciona todos os titles com a palavra titulo*/
+
+
+[title ^="t"]{
+    background-color: green;
+}
+/*  ^= Pega todos que começam com a letra t */
+
+[title $="1"]{
+    background-color: green;
+}
+/* $= pega aqueles que terminam em 1*/
+
+
+
+[title *= "tu"]{
+    background-color: green;
+}
+/* *= pega todos os titulos que estiverem em qualquer lugar */
+

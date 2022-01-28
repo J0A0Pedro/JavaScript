@@ -1,0 +1,62 @@
+input:focus{
+    color:red;
+}
+/*Só oq está em foco vai ficar com texto vermelho*/
+
+li:first-child{
+    color: blue;
+}
+/*Apenas o primeiro filho de um elemento da lista foi modificado*/
+
+li:first-of-type{
+    color:hotpink;
+}
+/*Apenas o primeiro do seu tipo dentro do ul*/
+
+li:nth-child(3){
+    color:lawngreen;
+}
+/*pega o terceiro*/
+
+li:nth-of-type(2n){
+        color:maroon;
+}
+/*pega o segundo do tipo li. Se colocarmos o n, ele pega todos os elementos divisiveis por 2.*/
+
+li:nth-last-child(2){
+    color:midnightblue;
+}
+/*pega o segundo de tras para frente*/
+
+li:last-child{
+    color:orangered;
+}
+/*pega o último*/
+
+li:last-of-type{
+    color:seagreen;
+}
+/*tbm pega o último*/
+
+
+li:nth-of-type(odd){
+    background-color: springgreen;
+    color:black;
+}
+/*Pega todos os valores impares da li*/
+
+li:nth-of-type(even){
+    background-color: rgb(168, 153, 168);
+    color:whitesmoke;
+}
+/*pega todos os pares*/
+
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
