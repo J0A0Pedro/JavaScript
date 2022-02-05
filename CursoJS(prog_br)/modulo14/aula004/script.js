@@ -15,6 +15,7 @@ dobro(2);
 */
 
 
+
 let dobro = (x) => {
     console.log(2 * x)
 }
