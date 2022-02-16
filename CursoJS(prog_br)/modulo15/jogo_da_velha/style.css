@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+    /*background-color: rgba(170, 170, 170, 0.973);*/
+    background:linear-gradient(to left, rgb(0, 0, 31), rgb(15, 0, 0));
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 204, 204);
+    
+}
+
+button{
+    border:none;
+    background-color: rgb(77, 0, 0);
+    color:white;
+    border-radius: 8px;
+    padding:10px;
+    margin:35px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.541);
+}
+button:hover{
+    background-color: rgb(0, 146, 19); ;
+}
+
+.stage{
+    box-shadow: 10px 30px 15px 10px rgba(0, 0, 0, 0.39);
+}
+
+.square{
+    width:100px;
+    height:100px;
+    background-color: rgb(0, 0, 0);
+    border-left:2px solid rgba(255, 202, 202, 0.76);
+    border-top:2px solid rgba(187, 224, 255, 0.719);
+    display:inline-block;
+    box-shadow: inset -10px 5px 35px 3px
+    rgba(0, 68, 255, 0.603);
+
+}
+.fi{
+    box-shadow: inset -10px 5px 35px 3px 
+    rgba(255, 81, 0, 0.616);
+
+}
+
+.o{
+    position: relative;
+}
+.o:after{
+    position: absolute;
+    color:white;
+    content:"\1F525";
+    font-size: 50px;
+    line-height: 100px;
+
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+
+.x{
+    position: relative;
+}
+.x:after{
+    position: absolute;
+    color:white;
+    content:"\1F4A6";
+    font-size: 50px;
+    line-height: 100px;
+
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
