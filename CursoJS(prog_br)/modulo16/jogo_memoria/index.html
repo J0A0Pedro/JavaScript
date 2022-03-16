@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <title>Jogo da Memória</title>
 </head>
 <body>
 
-
-    <div id="kjenfdef" class="card" data-icon="bootstrap">
-        <div class="card_front">
-            <img width="65px" class="icon" src="assets/img/bootstrap-logo.png">
-        </div>
-        <div class="card_back">
-            &lt/&gt
-        </div>
+    <div id="gameBoard" >
+        <!-- <div id="kjenfdef" class="card flip"
+         data-icon="bootstrap">
+            <div class="card_front">
+                <img width="65px" class="icon" src="assets/img/bootstrap-logo.png">
+            </div>
+            <div class="card_back">
+                &lt/&gt
+            </div>
+        </div> -->
     </div>
+
+
+    <div id="gameOver">
+        <div>
+            Parabéns! Você completou o jogo!
+        </div>
+        <button id="restart" onclick="restart()">Jogue novamente!
+        <img width="25px" id="seta" src="assets/img/seta.png" alt="seta">
+        </button>
+    </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
