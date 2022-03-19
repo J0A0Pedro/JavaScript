@@ -7,13 +7,28 @@ body{
     font-family: 'Righteous', sans-serif;
 }
 
+#gameBoard{
+    display: flex;
+    width:60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top:30px;
+    margin-bottom:30px;
+
+}
 .card{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     position: relative;
 
     transform-style: preserve-3d;
     transition: transform .5s;
+    
+
+    margin:10px;
 
 }
 .card_back, .card_front{
@@ -58,7 +73,7 @@ body{
     font-size: 50px;
     text-align: center;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -104,4 +119,45 @@ body{
         font-size: 17px;
         padding: 6px;   
     }
+
+   
+}
+
+@media (max-width:850px) {
+        
+    #gameBoard{
+        width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+
+        /* background-color: red; */
+
+    }
+    .card{
+        width: 120px;
+        height: 120px;
+    }
+
+    img{
+        width:70px;
+    }
+
+}
+
+
+@media (max-width:400px) {
+    #gameBoard{
+        margin: 0;
+        /* background-color: blue; */
+
+    }
+    .card{
+        width: 90px;
+        height: 90px;
+    }
+
+    img{
+        width:50px;
+    }
+    
 }
