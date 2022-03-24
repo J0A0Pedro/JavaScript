@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="titulo" >Esse é um título H1</h1>
+
+    <h1>Outro título</h1>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+    
+
+     $.noConflict(); //em caso de conflito, chamamos esse método, mas o cifrão não vai mais funcionar, então o substituímos por jQuery
+
+    jQuery(".titulo").hide(); //esconde um elemento
+
+    // setTimeout( () => {      
+    //     jQuery(".titulo").show(); //mostra um elemento
+    // }, 2000);
+
+
+    //FAZENDO O MESMO SEM JQUERY:
+
+    document.querySelectorAll(".titulo").forEach( elemento => {
+        elemento.style.display = "none";
+    }); //escondemos o titulo sem utilizar o jquery
+
+
+    </script>
+
+
+
+</body>
+</html>
