@@ -10,6 +10,57 @@
 <!--     
     <script src="./jquery-3.6.0.min.js"></script> -->
 
+    <h1 class="titulo">Esse é um título H1</h1>
+
+    <h1 id="sair" style="display:none">Não saia agora!</h1>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+
+        let jq = $.noConflict();
+        
+        // jq(".titulo").click( () => {
+        //   console.log("clique");   
+        // }) //ação de clique
+
+
+        // jq(".titulo").mouseenter( () => {
+        //     console.log("Mouse enter"); 
+        // }) //ação do cursor entrando
+
+
+
+        // jq(".titulo").mouseleave( () => {
+        //     console.log("Mouse leave");
+        // }) //ação do cursor saindo
+
+        
+
+        // jq(".titulo").dblclick( () => {
+        //     console.log("double click");
+        // }) //ação de clique duplo
+
+        //jq(".titulo").hide();
+
+
+        jq(document).mouseleave( () => {
+            //console.log("mouse leave");
+
+            jq(".titulo").hide();
+            jq("#sair").show();   
+        })
+
+        jq(document).mouseenter( () => {
+            //console.log("mouse enter");
+            jq("#sair").hide();
+            jq(".titulo").show();
+        })
+
+
+
+    </script>
+
 </body>
 </html>
