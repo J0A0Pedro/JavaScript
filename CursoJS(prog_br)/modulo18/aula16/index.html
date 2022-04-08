@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Elementos Irmãos - Siblings</title>
+</head>
+<body>
+
+
+    <div>
+        <div id="div1">
+            Div 1
+        </div>
+        <div id="div2">
+            Div 2
+        </div>
+        <div id="div3">
+            Div 3
+        </div>
+        <div id="div4">
+            Div 4
+        </div>
+        <div id="div5">
+            Div 5
+        </div>
+    </div>
+
+    <div>
+        <div id="div6">
+            Div 6
+        </div>
+        <div id="div7">
+            Div 7
+        </div>
+        <div id="div8">
+            Div 8
+        </div>
+        <div id="div9">
+            Div 9
+        </div>
+        <div id="div10">
+            Div 10
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script> 
+
+
+    <script>
+
+        let selectedSiblings = $("#div3").siblings();
+        
+        console.log(selectedSiblings);
+
+        //Siblings() pega todos os irmãos que estão no mesmo nível. Ele nos mostrou a div1, div2, div4, div5, mas n mostrou a div3 e nem mostrou as outras divs(div6, div7, div8, div9 e div10) que estão fora de seu "container"
+
+
+        //nextAll() nos retorna todo os elementos que estão acima/declarados depois daquele que foi selecionado. Se selecionarmos a div3, ele nos retornara a div4 e div5
+
+        let selectedNextAll = $("#div3").nextAll();
+
+        
+        console.log(selectedNextAll);
+
+
+        //temos o next() que só vai trazer o elemento em seguida, não todos, apenas o próximo
+
+        let selectedNext = $("#div3").next();
+
+        console.log(selectedNext);
+
+
+
+        //prev() pega o último elemento do elemento selecionado. Ou seja, se eu dou um prev na div3, ele nos retorna div2
+
+        let selectedPrev = $("#div3").prev();
+
+        console.log(selectedPrev);
+        //retorna div2
+
+
+        //prevAll() pega todos os elementos(do mesmo nivel)que foram declarados antes da div selecionada
+
+        let selectedPrevAll = $("#div3").prevAll();
+        console.log(selectedPrevAll);
+
+        //retorna div2 e div1(nessa ordem)
+
+
+        //nextUntil() vai pegar todos oe lementos depois da div passada e vai até o elemento que foi passado como parâmetro
+
+
+        let selectedNextUntil = $("#div1").nextUntil("#div4");
+
+        console.log(selectedNextUntil);
+
+        //retorna div2 e div3
+
+        //Ele começou na div1 e terminou na div4(e não pegou eles, só oq ficou entre eles)
+
+
+        //prevUntil() tem o mesmo efeito que nextUntil, só que pegando os elementos anteriores 
+
+
+        let selectedPrevUntil = $("#div5").prevUntil("#div1");
+
+        console.log(selectedPrevUntil);
+
+        //retorna div4, div3, div2 (nessa ordem, e não pegou a div5 e div1, seguindo o mesmo esquema que o nextUntil)
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
