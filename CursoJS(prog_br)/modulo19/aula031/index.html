@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        ul{
+            text-align: center;
+            margin-top:10vh;
+            margin-right:20vh;
+        }
+        li{
+            list-style: none;
+            margin:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container d-flex justify-content-center mt-5 p-5">
+        <a href="#" data-trigger="hover" data-toggle="popover" title="Curso de programação" data-content="O melhor do Brasil">Programador BR</a>
+
+
+        <ul>
+            <li data-trigger="hover" data-toggle="popover" title="Conteudo1" data-content="Explicação do item 1">
+                Conteudo 1
+            </li>
+
+            <li data-trigger="hover" data-toggle="popover" title="Conteudo2" data-content="Explicação do item 2">
+                Conteudo 2
+            </li>
+
+            <li data-trigger="hover" data-toggle="popover" title="Conteudo3" data-content="Explicação do item 3">
+                Conteudo 3
+            </li>
+        </ul>
+    </div>
+
+    
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready( () => {
+            $("[data-toggle='popover']").popover();
+        });
+    </script>
+
+
+</body>
+
+</html>
+
