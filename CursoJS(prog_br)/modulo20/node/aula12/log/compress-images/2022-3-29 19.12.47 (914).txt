@@ -1,0 +1,8 @@
+File from: [./temp/output_resize.jpg]
+
+File to: [./compressed/output_resize.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: C:\Users\Acer\Documents\ProgramadorBR-Curso\modulo20\node\aula12\node_modules\mozjpeg\vendor\cjpeg.exe -quality 60 -outfile ./compressed/output_resize.jpg ./temp/output_resize.jpg
+C:\Users\Acer\Documents\ProgramadorBR-Curso\modulo20\node\aula12\node_modules\mozjpeg\vendor\cjpeg.exe: can't open ./compressed/output_resize.jpg
